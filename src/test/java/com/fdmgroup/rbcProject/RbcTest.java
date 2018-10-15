@@ -49,6 +49,7 @@ public class RbcTest {
 	public void testWhenQuantityOfZeroAdded_ReturnsTotalPriceOfZero(){
 		
 		double result = controller.findTotalPrice(50, 0, 0.0);
+		
 		assertEquals(result, 0, 0.0);
 	}
 	
@@ -56,6 +57,7 @@ public class RbcTest {
 	public void testWhenQuantityOfOneAddedWithPriceOfFifty_ReturnsTotalPriceOfFifty(){
 		
 		double result = controller.findTotalPrice(50, 1, 0.0);
+		
 		assertEquals(result, 50, 0.0);
 	}
 	
@@ -63,6 +65,7 @@ public class RbcTest {
 	public void testWhenQuantityOfMinusOneAdded_ReturnsTotalPriceOfZero(){
 		
 		double result = controller.findTotalPrice(50, -1, 0.0);
+		
 		assertEquals(result, 0, 0.0);
 	}
 	
@@ -70,6 +73,7 @@ public class RbcTest {
 	public void testWhenQuantityOfOneThousandAndOneOneAdded_ReturnsTotalPriceOfZero(){
 		
 		double result = controller.findTotalPrice(50, 1001, 0.0);
+		
 		assertEquals(result, 0, 0.0);
 	}
 
@@ -77,6 +81,7 @@ public class RbcTest {
 	public void testWhenQuantityOfTenAddedWithPriceOfFifty_ReturnsTotalPriceOf500(){
 		
 		double result = controller.findTotalPrice(50, 10, 0.0);
+		
 		assertEquals(result, 500, 0.0);
 	}
 	
