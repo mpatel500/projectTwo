@@ -12,7 +12,6 @@ public class Fruit {
 	}
 
 	public double getPrice(String fruitName) {
-		
 		if(fruitName.equals("Oranges")){
 			return 60;
 		}
@@ -28,9 +27,6 @@ public class Fruit {
 		if(fruitName.equals("Lemons")){
 			return 80;
 		}
-		
 		return 0;
 	}
-
-	
 }
