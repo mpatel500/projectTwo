@@ -23,7 +23,7 @@ public class Controller {
 			return true;
 		}
 		else{
-			System.out.println("Your order has been aborted, thank you for using the system");
+			System.out.println("Your order has been aborted");
 			return false;
 		}
 	}
