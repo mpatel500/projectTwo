@@ -13,7 +13,6 @@ public class Runner {
 	public static void main(String[] args) {
 
 		Controller controller = new Controller();
-		
 		Double totalPrice = 0.0;
 		NumberFormat formatter = new DecimalFormat("#0.00");     
 		
@@ -22,13 +21,11 @@ public class Runner {
 			System.out.println("Please select a fruit to purchase (Apples/Oranges/Pears/Lemons/Bananas)");
 			Scanner userInput = new Scanner(System.in);
 			String fruitName = userInput.nextLine();
-			
 			Integer price = controller.findPrice(fruitName);
 			
 			if(price==0){
 				continue;
 			}
-			
 			
 			System.out.println("Please select the quantity of food that you wish to purchase");
 			
@@ -38,10 +35,9 @@ public class Runner {
 			}
 			
 			Integer quantity = userInput.nextInt();
-			
+	
 			totalPrice = controller.findTotalPrice(price, quantity, totalPrice);
 			System.out.println("The total price is: £"+formatter.format(totalPrice*0.01));
-			
 			System.out.println("Do you wish to purchase more fruit? (type 'yes' to continue, type 'no' to checkout, type anything else abort order)");
 			String input = userInput.next();
 			
@@ -53,17 +49,9 @@ public class Runner {
 			if(controller.validate(input)==false){
 				break;
 			}
-			
-			
 		}
-		
 		System.out.println("Thank you for using this system!");
 	}
-	
-
-	
-		
-
 }
 
 
