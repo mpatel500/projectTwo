@@ -47,7 +47,6 @@ public class Runner {
 			
 			if(input.equals("no")){
 				System.out.println("The total price of your order is: £"+formatter.format(totalPrice*0.01));
-				System.out.println("Thank you for using this system!");
 				break;
 			}
 			
@@ -58,7 +57,7 @@ public class Runner {
 			
 		}
 		
-		
+		System.out.println("Thank you for using this system!");
 	}
 	
 
