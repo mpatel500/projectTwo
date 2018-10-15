@@ -42,7 +42,7 @@ public class Runner {
 			totalPrice = controller.findTotalPrice(price, quantity, totalPrice);
 			System.out.println("The total price is: £"+formatter.format(totalPrice*0.01));
 			
-			System.out.println("Do you wish to purchase more fruit? (type 'yes' to continue, type 'no' to checkout, type anything abort order)");
+			System.out.println("Do you wish to purchase more fruit? (type 'yes' to continue, type 'no' to checkout, type anything else abort order)");
 			String input = userInput.next();
 			
 			if(input.equals("no")){
